@@ -1,7 +1,78 @@
 /* reset */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* utility */
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+/* general TAG rules */
+
+body {
+  padding: 20px 150px;
+  /* potrei anche dare dei margini ai contenitori interni, è una prova */
+}
+
+main {
+  margin: 20px 0;
+  padding-bottom: 30px;
+  background-color: #0186fa;
+}
+
+footer {
+  margin-top: 10px;
+  height: 50px;
+  background-color: #8801fe;
+}
+/* specific class rules */
+
+.top-header {
+  height: 150px;
+  background-color: #e579e6;
+}
+
+.bottom-header {
+  height: 500px;
+  background-color: #e1d67a;
+  margin-top: 20px;
+}
+
+.main-title {
+  height: 100px;
+}
+
+.main-title,
+.col {
+  background-color: #abcfe7;
+}
+
+.main-container .col {
+  height: 500px;
+  /* border: 1px solid black; */
+  margin-top: 30px;
+}
+
+.left-column,
+.right-column {
+  width: 20%;
+}
+.center-column {
+  width: 55%;
+  margin: 0 2.5%;
+}
+
+.left {
+  float: left;
 }
