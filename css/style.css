@@ -14,10 +14,6 @@
   clear: both;
 }
 
-nav ul li {
-  list-style-type: none;
-}
-
 /* general TAG rules */
 
 body {
@@ -36,6 +32,20 @@ footer {
   height: 50px;
   background-color: #8801fe;
 }
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #DFDEE0;
+  }
+  
+  nav ul li a {
+      text-decoration: none;
+  }
 /* specific class rules */
 
 .top-header {
@@ -75,4 +85,12 @@ footer {
 
 .left {
   float: left;
+}
+
+.logo {
+    width: 200px;
+}
+
+.logo img {
+    height: 70px;   
 }
